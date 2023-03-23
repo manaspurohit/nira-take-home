@@ -1,0 +1,60 @@
+.BusDetail {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  width: 500px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.title {
+  font-size: large;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.pill-row {
+  display: flex;
+  flex-direction: row;
+  margin-left: 37px;
+  gap: 5px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.sub-heading {
+  font-size: medium;
+  font-weight: bold;
+}
+
+.label {
+  font-size: medium;
+  color: #ABB3BF;
+  width: 225px;
+}
+
+.value {
+  font-size: medium;
+  overflow-wrap: break-word;
+  inline-size: 275px;
+}
