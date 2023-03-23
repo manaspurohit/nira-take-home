@@ -34,25 +34,23 @@ const formattedCost = (cost: number): string => {
 function BusDetail({busId, voltage, owner, latitude, longitude, busName, mwEnergy, mwCapacity, allocatedCost, totalCost, numberConstraints}: Props) {
   return (
     <div className='BusDetail'>
-      <div className='header'>
-        <div className='header-left'>
-          <EnergyDot energy={mwEnergy} />
-          <div className='title'>{busName}</div>
-        </div>
+      <div className='BusDetail-row'>
+        <EnergyDot energy={mwEnergy} />
+        <div className='BusDetail-title'>{busName}</div>
         <Icon icon='small-cross' size={25} color='gray'/>
       </div>
-      <div className='pill-row'>
+      <div className='BusDetail-row BusDetail-pill-row'>
         <Pill backgroundColor='#2D72D2' text={`${mwEnergy} MWE`} />
         <Pill backgroundColor='#5F6B7C' text={`${mwCapacity} MWC`} />
       </div>
-      <div className='section'>
-        <div className='sub-heading'>Triggered constraints</div>
+      <div className='BusDetail-section'>
+        <div className='BusDetail-sub-heading'>Triggered constraints</div>
         <DetailRow label='Allocated cost' value={formattedCost(allocatedCost)} />
         <DetailRow label='Total cost' value={formattedCost(totalCost)} />
         <DetailRow label='Number of constraints' value={`${numberConstraints} constraints`} />
       </div>
-      <div className='section'>
-        <div className='sub-heading'>Bus details</div>
+      <div className='BusDetail-section'>
+        <div className='BusDetail-sub-heading'>Bus details</div>
         <DetailRow label='Bus ID' value={busId} />
         <DetailRow label='Voltage' value={voltage.toString()} />
         <DetailRow label='Owner' value={owner} />

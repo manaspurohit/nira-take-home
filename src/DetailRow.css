@@ -1,0 +1,16 @@
+.DetailRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.DetailRow-label {
+  font-size: medium;
+  color: #ABB3BF;
+  width: 225px;
+}
+
+.DetailRow-value {
+  font-size: medium;
+  overflow-wrap: break-word;
+  inline-size: 275px;
+}

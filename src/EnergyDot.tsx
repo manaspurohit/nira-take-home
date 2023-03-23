@@ -15,7 +15,6 @@ function EnergyDot({ energy }: Props) {
   }
 
   const circleStyle =  {
-    display: 'flex',
     width: '10px',
     height: '10px',
     borderWidth: '6px',

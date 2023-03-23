@@ -1,4 +1,4 @@
-import './BusDetail.css';
+import './DetailRow.css'
 
 interface Props {
   label: string,
@@ -7,9 +7,9 @@ interface Props {
 
 function DetailRow({label, value}: Props) {
   return (
-    <div className='row'>
-      <div className='label'>{label}</div>
-      <div className='value'>{value}</div>
+    <div className='DetailRow'>
+      <div className='DetailRow-label'>{label}</div>
+      <div className='DetailRow-value'>{value}</div>
     </div>
   )
 }
