@@ -17,7 +17,7 @@ function EnergyDot({ energy }: Props) {
   const circleStyle =  {
     width: '10px',
     height: '10px',
-    borderWidth: '6px',
+    borderWidth: '7px',
     borderStyle: 'solid',
     borderColor: color,
     borderRadius: '50%',
