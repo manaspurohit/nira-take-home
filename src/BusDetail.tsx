@@ -31,6 +31,11 @@ const formattedCost = (cost: number): string => {
   return '$' + result;
 };
 
+const formattedConstraints = (constraints: number): string => {
+  let result = constraints === 1 ? ' constraint' : ' constraints';
+  return constraints.toString() + result;
+}
+
 function BusDetail({busId, voltage, owner, latitude, longitude, busName, mwEnergy, mwCapacity, allocatedCost, totalCost, numberConstraints}: Props) {
   return (
     <div className='BusDetail'>
@@ -47,7 +52,7 @@ function BusDetail({busId, voltage, owner, latitude, longitude, busName, mwEnerg
         <div className='BusDetail-sub-heading'>Triggered constraints</div>
         <DetailRow label='Allocated cost' value={formattedCost(allocatedCost)} />
         <DetailRow label='Total cost' value={formattedCost(totalCost)} />
-        <DetailRow label='Number of constraints' value={`${numberConstraints} constraints`} />
+        <DetailRow label='Number of constraints' value={formattedConstraints(numberConstraints)} />
       </div>
       <div className='BusDetail-section'>
         <div className='BusDetail-sub-heading'>Bus details</div>
